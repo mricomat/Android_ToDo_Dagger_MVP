@@ -1,0 +1,67 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linear_title"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:focusable="true"
+            android:gravity="left"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            tools:text="Homework"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/reminder_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_title"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        android:paddingEnd="15dp"
+        android:paddingStart="25dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Remind Me"
+            android:textColor="@color/black"
+            android:textSize="16sp">
+        </TextView>
+
+        <Spinner
+            android:id="@+id/spinner_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:entries="@array/reminder_times">
+
+        </Spinner>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/remove_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:text="Remove"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

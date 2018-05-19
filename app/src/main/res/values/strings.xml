@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ToDo-MVP</string>
+    <string name="empty_list">Your list is Empty</string>
+    <string name="reminder">Reminder set for %1$s, %2$s</string>
+    <string name="generic_removed">Removed</string>
+    <string name="ten_minutes">10 Minutes</string>
+    <string name="thirty_minutes">30 Minutes</string>
+    <string name="one_hour">1 Hour</string>
+    <string name="two_hours">2 Hour</string>
+    <string name="new_todo">New ToDo</string>
+    <string name="made_by_me">Made by Martín</string>
+    <string name="you_can_contact_me_at">You can contact me at</string>
+    <string name="my_email">martinricomartinez@gmail.com</string>
+    <string name="generic_about">About</string>
+
+    <string-array name="reminder_times">
+        <item>10 Minutes</item>
+        <item>30 Minutes</item>
+        <item>1 Hour</item>
+        <item>2 Hours</item>
+    </string-array>
+</resources>
